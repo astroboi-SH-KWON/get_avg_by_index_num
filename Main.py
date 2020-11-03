@@ -21,7 +21,7 @@ hFAH_PE_Cutoff = "hFAH_PE_Cutoff.txt"
 
 ############### end setting env #################
 
-def test():
+def main():
     util = Util.Utils()
     logic_prep = LogicPrep.LogicPreps()
     logic = Logic.Logics()
@@ -44,5 +44,5 @@ def test():
 if __name__ == '__main__':
     start_time = time.perf_counter()
     print("start [ " + PROJECT_NAME + " ]>>>>>>>>>>>>>>>>>>")
-    test()
+    main()
     print("::::::::::: %.2f seconds ::::::::::::::" % (time.perf_counter() - start_time))
